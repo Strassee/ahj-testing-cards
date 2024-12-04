@@ -19,9 +19,3 @@ test.each([
 ])('.add card number %i expect %o', (value, expected) => {
   expect(isCardSystem(value)).toEqual(expected);
 });
-
-// describe("Пример теста", () => {
-//   it("my test", () => {
-//     expect(1).toBe(1);
-//   });
-// });

@@ -7,4 +7,3 @@ function Luhn(value) {
   const sum = arr.reduce((acc, item, ind) => ind % 2 ? acc + ((item * 2 > 9 ? (item * 2) - 9 : item * 2)) : acc + item, 0);
   return sum % 10 === 0 ? true : false; 
 } 
-

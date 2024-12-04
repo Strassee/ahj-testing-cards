@@ -14,4 +14,3 @@ server.startCallback((err) => {
     process.send('ok');
   }
 });
-
