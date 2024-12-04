@@ -80,7 +80,7 @@ export class CardsWidget {
     if(Number.isInteger(Number(value))) {
       this.CardSystem(value);
     } else {
-      this.isResultError('Input Error', 0);
+      this.isResult('Input Error', 0);
     }
   }
 
