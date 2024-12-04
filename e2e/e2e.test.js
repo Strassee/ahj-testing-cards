@@ -15,15 +15,14 @@ describe('Credit Card Validator form', () => {
       server.on('error', reject);
       server.on('message', (message) => {
         if (message === 'ok') {
-          console.log('OK')
           resolve();
         }
       });
     });
 
     browser = await puppetteer.launch({
-      headless: false, // show gui
-      slowMo: 250,
+      headless: true, // show gui
+      slowMo: 100,
       devtools: true, // show devTools
     });
     page = await browser.newPage();
